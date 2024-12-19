@@ -1,0 +1,144 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f9;
+    color: #333;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    min-height: 100vh;
+    justify-content: center;
+}
+
+.sidebar {
+    width: 25%;
+    background-color: #fff;
+    padding: 20px;
+    border-left: 1px solid #ddd;
+    box-shadow: inset -1px 0 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+    border-bottom: 1px solid #ddd;
+}
+
+.sidebar .headings {
+    margin-bottom: 20px;
+}
+
+.sidebar a {
+    display: block;
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: #007BFF;
+    transition: color 0.3s ease;
+}
+
+.sidebar a:hover {
+    color: #0056b3;
+}
+
+.sidebar .ads {
+    background-color: #eaeaea;
+    padding: 15px;
+    text-align: center;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.content {
+    width: 75%;
+    padding: 20px;
+    overflow-y: auto;
+    background-color: #bff8c1;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+    text-align: center;
+}
+
+.content h2 {
+    margin-top: 30px;
+    border-bottom: 1px solid #17015b;
+    padding-bottom: 10px;
+    color: #17015b;
+}
+
+.content p {
+    margin-bottom: 20px;
+    color: #666;
+    line-height: 1.8;
+}
+
+.content ul {
+    margin: 15px 0;
+    padding: 20px;
+    text-align: center;
+    list-style-type: disc;
+}
+
+.content ol {
+    margin: 15px 0;
+    padding-left: 20px;
+    text-align: center;
+    list-style-type: decimal;
+}
+
+.ad-section {
+    background-color: #eaeaea;
+    margin: 20px 0;
+    padding: 15px;
+    text-align: center;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+/* استجابة للشاشات الصغيرة */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sidebar {
+        width: calc(100% - 30px);
+        height: auto;
+        box-shadow: none;
+        border-left: none;
+        border-bottom: 1px solid #ddd;
+        margin: 0 15px;
+    }
+
+    .content {
+        width: calc(100% - 30px);
+        padding: 20px;
+        margin: 0 auto;
+        padding-left: 15px;
+        padding-right: 15px;
+        box-sizing: border-box;
+    }
+}
+
+.sidebar {
+    
+    background-color: #dbf5de;
+    border-bottom: 1px solid #ddd;
+}
+
+.sidebar a {
+    color: #333;
+}
+
+.sidebar a:hover {
+    color: #007BFF;
+}
+
+/* حركة سلسة عند التنقل */
+html {
+    scroll-behavior: smooth;
+}
